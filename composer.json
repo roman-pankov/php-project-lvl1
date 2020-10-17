@@ -1,0 +1,13 @@
+{
+  "name": "hexlet/code",
+  "authors": [
+    {
+      "name": "Roman Pankov",
+      "email": "roman@pankov.dev"
+    }
+  ],
+  "require": {},
+  "bin": [
+    "bin/brain-games"
+  ]
+}
