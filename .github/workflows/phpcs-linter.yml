@@ -1,4 +1,4 @@
-name: Super-Linter
+name: PHPCS-Linter
 
 # Run this workflow every time a new commit pushed to your repository
 on: push
@@ -18,8 +18,9 @@ jobs:
         uses: actions/checkout@v2
 
       # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Composer install
+        run: php composer.phar install
+
+      # Runs the Super-Linter action
+      - name: Run PHPCS linter
+        run: make lint
