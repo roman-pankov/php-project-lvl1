@@ -1,5 +1,6 @@
 {
   "name": "hexlet/code",
+  "description": "Pankov Roman Hexlet level 1",
   "authors": [
     {
       "name": "Roman Pankov",
@@ -7,6 +8,7 @@
     }
   ],
   "require": {
+    "php": "^7.4",
     "wp-cli/php-cli-tools": "^0.11.11"
   },
   "require-dev": {
@@ -18,7 +20,8 @@
     }
   },
   "bin": [
-    "bin/brain-games"
+    "bin/brain-games",
+    "bin/brain-even"
   ],
   "scripts": {
     "phpcs": "./vendor/bin/phpcs"
