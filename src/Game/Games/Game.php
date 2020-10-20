@@ -6,12 +6,13 @@ use Brain\Games\Game\GameInterface;
 
 class Game implements GameInterface
 {
-    public function start(string $username): int
+    public function start(): void
     {
-        /*
-         * Просто заглушка
-         */
 
-        return 0;
+    }
+
+    public function question(): bool
+    {
+        return true;
     }
 }

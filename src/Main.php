@@ -4,11 +4,14 @@ namespace Brain\Games;
 
 use Brain\Games\Game\GameInterface;
 
+use function cli\err;
 use function cli\line;
 use function cli\prompt;
 
 class Main
 {
+    protected const ATTEMPT_SUCCESS = 3;
+
     public function start(string $gameName): void
     {
         /**
@@ -23,23 +26,20 @@ class Main
         /** @var GameInterface $game */
         $game = new $class();
 
-        $this->welcome();
-
-        $username = $this->askUsername();
-
-        $game->start($username);
-    }
-
-    protected function welcome(): void
-    {
         line('Welcome to the Brain Games!');
-    }
+        $username = prompt('May I have your name?');
+        line("Hello, %s!", $username);
 
-    protected function askUsername(): string
-    {
-        $name = prompt('May I have your name?');
-        line("Hello, %s!", $name);
+        $game->start();
 
-        return $name;
+        for ($attempt = 0; $attempt < self::ATTEMPT_SUCCESS; $attempt++) {
+            if (false === $game->question()) {
+                err("Let's try again, %s", $username);
+
+                return;
+            }
+        }
+
+        line('Congratulations, %s!', $username);
     }
 }
