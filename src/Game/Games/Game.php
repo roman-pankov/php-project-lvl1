@@ -8,7 +8,9 @@ class Game implements GameInterface
 {
     public function start(): void
     {
-
+        /*
+         * Заглушка
+         */
     }
 
     public function question(): bool

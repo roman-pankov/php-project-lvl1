@@ -1,6 +1,5 @@
 <?php
 
-
 namespace Brain\Games\Game\Calc;
 
 use Brain\Games\Game\GameInterface;

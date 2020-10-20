@@ -37,5 +37,4 @@ class Game implements GameInterface
 
         return true;
     }
-
 }
