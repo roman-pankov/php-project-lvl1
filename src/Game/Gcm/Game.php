@@ -4,6 +4,7 @@ namespace Brain\Games\Game\Gcm;
 
 use Brain\Games\Game\GameInterface;
 
+use function cli\err;
 use function cli\line;
 use function cli\prompt;
 
@@ -23,7 +24,15 @@ class Game implements GameInterface
 
         $answer = prompt('Your answer');
 
-        return (int)$answer === $this->gcd($num1, $num2);
+        $result = $this->gcd($num1, $num2);
+
+        if ((int)$answer !== $result) {
+            err("'{$answer}' is wrong answer ;(. Correct answer was '{$result}'.");
+
+            return false;
+        }
+
+        return true;
     }
 
     protected function gcd($n, $m): int
