@@ -20,3 +20,10 @@ Success:
 
 Fail:
 [![asciicast](https://asciinema.org/a/rVkkP9W3D8JE5a5z72Bpz6YGx.svg)](https://asciinema.org/a/rVkkP9W3D8JE5a5z72Bpz6YGx)
+
+Game "GCD"
+Success:
+[![asciicast](https://asciinema.org/a/il2iHK2d2snjGOhfTUbOiZ6Oo.svg)](https://asciinema.org/a/il2iHK2d2snjGOhfTUbOiZ6Oo)
+
+Fail:
+[![asciicast](https://asciinema.org/a/6y6anUtN7hhGb6nzaQMNBPdFl.svg)](https://asciinema.org/a/6y6anUtN7hhGb6nzaQMNBPdFl)
