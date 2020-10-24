@@ -8,4 +8,5 @@ class GameEnum
     public const GAMES = 'Games';
     public const CALC = 'Calc';
     public const GREATEST_COMMON_DIVISOR = 'Gcm';
+    public const ARITHMETIC_PROGRESSION = 'ArithmeticProgression';
 }

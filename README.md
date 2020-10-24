@@ -27,3 +27,10 @@ Success:
 
 Fail:
 [![asciicast](https://asciinema.org/a/6y6anUtN7hhGb6nzaQMNBPdFl.svg)](https://asciinema.org/a/6y6anUtN7hhGb6nzaQMNBPdFl)
+
+Game "Arithmetic progression"
+Success:
+[![asciicast](https://asciinema.org/a/2d5fBZNoROmU4fzJ4NKkc4yXs.svg)](https://asciinema.org/a/2d5fBZNoROmU4fzJ4NKkc4yXs)
+
+Faild:
+[![asciicast](https://asciinema.org/a/PT27m2mNCZpT6F5L4q2YIrSEV.svg)](https://asciinema.org/a/PT27m2mNCZpT6F5L4q2YIrSEV)
