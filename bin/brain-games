@@ -8,5 +8,13 @@ require_once 'vendor/autoload.php';
 
 require_once 'src/Main.php';
 
+$menu = [
+    GameEnum::EVEN => 'Четное число',
+    GameEnum::CALC => 'Калькулятор',
+    GameEnum::GREATEST_COMMON_DIVISOR => 'Наибольший общий делитель',
+];
+
+$choice = \cli\menu($menu, null, 'Выберите игру');
+
 $main = new Main();
-$main->start(GameEnum::GAMES);
+$main->start($choice);
