@@ -34,3 +34,10 @@ Success:
 
 Faild:
 [![asciicast](https://asciinema.org/a/PT27m2mNCZpT6F5L4q2YIrSEV.svg)](https://asciinema.org/a/PT27m2mNCZpT6F5L4q2YIrSEV)
+
+Game "Prime number"
+Success:
+[![asciicast](https://asciinema.org/a/jBHcvEpC1DwPAEjdaR49xWc3a.svg)](https://asciinema.org/a/jBHcvEpC1DwPAEjdaR49xWc3a)
+
+Fail:
+[![asciicast](https://asciinema.org/a/kU1SFLIy4nc8l4sDxyB1WeSZI.svg)](https://asciinema.org/a/kU1SFLIy4nc8l4sDxyB1WeSZI)

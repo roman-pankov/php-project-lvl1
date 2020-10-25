@@ -13,6 +13,7 @@ $menu = [
     GameEnum::CALC => 'Калькулятор',
     GameEnum::GREATEST_COMMON_DIVISOR => 'Наибольший общий делитель',
     GameEnum::ARITHMETIC_PROGRESSION => 'Арифметическая прогрессия',
+    GameEnum::PRIME => 'Простое ли число?',
 ];
 
 $choice = \cli\menu($menu, null, 'Выберите игру');
