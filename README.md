@@ -5,6 +5,12 @@
 
 ![PHPCS linter](https://github.com/roman-pankov/php-project-lvl1/workflows/PHPCS-Linter/badge.svg)
 
+###Запуск меню с играми:
+
+```
+./brain-games
+```
+
 Game "Brain even"
 
 Success:
