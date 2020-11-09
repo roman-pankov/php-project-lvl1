@@ -1,12 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use Brain\Games\GameEnum;
-use Brain\Games\Main;
+require_once __DIR__ . '/../vendor/autoload.php';
 
-require_once 'vendor/autoload.php';
-
-require_once 'src/Main.php';
-
-$main = new Main();
-$main->start(GameEnum::CALC);
+\Brain\Games\Game\Calc\start();

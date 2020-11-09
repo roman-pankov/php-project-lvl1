@@ -1,22 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-use Brain\Games\GameEnum;
-use Brain\Games\Main;
+require_once __DIR__ . '/../vendor/autoload.php';
 
-require_once 'vendor/autoload.php';
-
-require_once 'src/Main.php';
-
-$menu = [
-    GameEnum::EVEN => 'Четное число',
-    GameEnum::CALC => 'Калькулятор',
-    GameEnum::GREATEST_COMMON_DIVISOR => 'Наибольший общий делитель',
-    GameEnum::ARITHMETIC_PROGRESSION => 'Арифметическая прогрессия',
-    GameEnum::PRIME => 'Простое ли число?',
-];
-
-$choice = \cli\menu($menu, null, 'Выберите игру');
-
-$main = new Main();
-$main->start($choice);
+\Brain\Games\Cli\start();
