@@ -5,7 +5,7 @@ namespace Brain\Games\Engine;
 use function cli\line;
 use function cli\prompt;
 
-const ATTEMPT = 3;
+const ATTEMPT_COUNT = 3;
 
 function start(string $description, callable $makeRoundData): void
 {
@@ -15,7 +15,7 @@ function start(string $description, callable $makeRoundData): void
 
     line($description);
 
-    for ($attempt = 0; $attempt < ATTEMPT; $attempt++) {
+    for ($attempt = 0; $attempt < ATTEMPT_COUNT; $attempt++) {
         [$question, $correctAnswer] = $makeRoundData();
 
         line("Question: %s", $question);
