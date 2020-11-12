@@ -2,7 +2,7 @@
 
 namespace Brain\Games\Game\Progression;
 
-const DESCRIPTION =  'What number is missing in the progression?';
+const DESCRIPTION = 'What number is missing in the progression?';
 
 function start(): void
 {
@@ -32,15 +32,6 @@ function start(): void
         }
     );
 }
-
-function generateNums(): array
-{
-    return [
-        random_int(1, 99),
-        random_int(1, 99)
-    ];
-}
-
 
 function generateProgression(int $step, int $start, int $len): array
 {

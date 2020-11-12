@@ -9,23 +9,17 @@ function start(): void
     \Brain\Games\Engine\start(
         DESCRIPTION,
         function () {
-            $nums = generateNums();
-            $answer = correctAnswer($nums[0], $nums[1]);
+            $num1 = random_int(1, 99);
+            $num2 = random_int(1, 99);
+
+            $answer = correctAnswer($num1, $num2);
 
             return [
-                sprintf('%s %s', ...$nums),
+                sprintf('%s %s', $num1, $num2),
                 $answer,
             ];
         }
     );
-}
-
-function generateNums(): array
-{
-    return [
-        random_int(1, 99),
-        random_int(1, 99)
-    ];
 }
 
 function correctAnswer(int $num1, int $num2): string

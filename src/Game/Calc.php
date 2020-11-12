@@ -2,7 +2,7 @@
 
 namespace Brain\Games\Game\Calc;
 
-const DESCRIPTION =  'What is the result of the expression?';
+const DESCRIPTION = 'What is the result of the expression?';
 const OPERATIONS = [
     '+',
     '-',
@@ -14,24 +14,19 @@ function start(): void
     \Brain\Games\Engine\start(
         DESCRIPTION,
         function () {
-            $nums = generateNums();
             $operation = getOperation();
-            $answer = correctAnswer($nums[0], $nums[1], $operation);
+
+            $num1 = random_int(1, 99);
+            $num2 = random_int(1, 99);
+
+            $answer = correctAnswer($num1, $num2, $operation);
 
             return [
-                sprintf('%s %s %s', $nums[0], $operation, $nums[1]),
+                sprintf('%s %s %s', $num1, $operation, $num2),
                 $answer,
             ];
         }
     );
-}
-
-function generateNums(): array
-{
-    return [
-        random_int(1, 99),
-        random_int(1, 99)
-    ];
 }
 
 function getOperation(): string

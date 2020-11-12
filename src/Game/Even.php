@@ -9,7 +9,7 @@ function start(): void
     \Brain\Games\Engine\start(
         DESCRIPTION,
         function () {
-            $num = generateNum();
+            $num = random_int(2, 100);
             $answer = correctAnswer($num);
 
             return [
@@ -18,11 +18,6 @@ function start(): void
             ];
         }
     );
-}
-
-function generateNum(): int
-{
-    return random_int(2, 100);
 }
 
 function correctAnswer(int $num): string
