@@ -2,6 +2,7 @@
 
 namespace Brain\Games\Game\Calc;
 
+const DESCRIPTION =  'What is the result of the expression?';
 const OPERATIONS = [
     '+',
     '-',
@@ -11,7 +12,7 @@ const OPERATIONS = [
 function start(): void
 {
     \Brain\Games\Engine\start(
-        description(),
+        DESCRIPTION,
         function () {
             $nums = generateNums();
             $operation = getOperation();
@@ -23,11 +24,6 @@ function start(): void
             ];
         }
     );
-}
-
-function description(): string
-{
-    return 'What is the result of the expression?';
 }
 
 function generateNums(): array

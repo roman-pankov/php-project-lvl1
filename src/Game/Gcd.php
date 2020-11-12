@@ -2,10 +2,12 @@
 
 namespace Brain\Games\Game\Gcd;
 
+const DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+
 function start(): void
 {
     \Brain\Games\Engine\start(
-        description(),
+        DESCRIPTION,
         function () {
             $nums = generateNums();
             $answer = correctAnswer($nums[0], $nums[1]);
@@ -16,11 +18,6 @@ function start(): void
             ];
         }
     );
-}
-
-function description(): string
-{
-    return 'Find the greatest common divisor of given numbers.';
 }
 
 function generateNums(): array

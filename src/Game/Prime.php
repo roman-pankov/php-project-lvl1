@@ -2,10 +2,12 @@
 
 namespace Brain\Games\Game\Prime;
 
+const DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function start(): void
 {
     \Brain\Games\Engine\start(
-        description(),
+        DESCRIPTION,
         function () {
             $num = generateNum();
             $answer = correctAnswer($num);
@@ -16,11 +18,6 @@ function start(): void
             ];
         }
     );
-}
-
-function description(): string
-{
-    return 'Answer "yes" if given number is prime. Otherwise answer "no".';
 }
 
 function generateNum(): int

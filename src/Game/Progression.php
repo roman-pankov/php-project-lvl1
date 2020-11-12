@@ -2,10 +2,12 @@
 
 namespace Brain\Games\Game\Progression;
 
+const DESCRIPTION =  'What number is missing in the progression?';
+
 function start(): void
 {
     \Brain\Games\Engine\start(
-        description(),
+        DESCRIPTION,
         function () {
             $step = random_int(2, 3);
             $start = random_int(1, 100);
@@ -29,11 +31,6 @@ function start(): void
             ];
         }
     );
-}
-
-function description(): string
-{
-    return 'What number is missing in the progression?';
 }
 
 function generateNums(): array
