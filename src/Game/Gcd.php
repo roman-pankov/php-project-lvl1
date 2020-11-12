@@ -12,7 +12,7 @@ function start(): void
             $num1 = random_int(1, 99);
             $num2 = random_int(1, 99);
 
-            $answer = correctAnswer($num1, $num2);
+            $answer = getCorrectAnswer($num1, $num2);
 
             return [
                 sprintf('%s %s', $num1, $num2),
@@ -22,7 +22,7 @@ function start(): void
     );
 }
 
-function correctAnswer(int $num1, int $num2): string
+function getCorrectAnswer(int $num1, int $num2): string
 {
     return gcd($num1, $num2);
 }

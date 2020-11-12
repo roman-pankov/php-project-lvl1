@@ -10,7 +10,7 @@ function start(): void
         DESCRIPTION,
         function () {
             $num = random_int(2, 100);
-            $answer = correctAnswer($num);
+            $answer = getCorrectAnswer($num);
 
             return [
                 (string)$num,
@@ -20,7 +20,7 @@ function start(): void
     );
 }
 
-function correctAnswer(int $num): string
+function getCorrectAnswer(int $num): string
 {
     return isPrime($num)
         ? 'yes'
