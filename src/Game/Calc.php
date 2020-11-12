@@ -19,7 +19,7 @@ function start(): void
             $num1 = random_int(1, 99);
             $num2 = random_int(1, 99);
 
-            $answer = getCorrectAnswer($num1, $num2, $operation);
+            $answer = (string)calculate($num1, $num2, $operation);
 
             return [
                 sprintf('%s %s %s', $num1, $operation, $num2),
@@ -34,7 +34,7 @@ function getOperation(): string
     return OPERATIONS[array_rand(OPERATIONS)];
 }
 
-function getCorrectAnswer(int $num1, int $num2, string $operation): string
+function calculate(int $num1, int $num2, string $operation): int
 {
     switch ($operation) {
         case '+':
