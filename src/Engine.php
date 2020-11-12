@@ -7,7 +7,7 @@ use function cli\prompt;
 
 const ATTEMPT = 3;
 
-function start(string $description, callable $game): void
+function start(string $description, callable $makeRoundData): void
 {
     line('Welcome to the Brain Games!');
     $username = prompt('May I have your name?');
@@ -16,7 +16,7 @@ function start(string $description, callable $game): void
     line($description);
 
     for ($attempt = 0; $attempt < ATTEMPT; $attempt++) {
-        [$question, $correctAnswer] = $game();
+        [$question, $correctAnswer] = $makeRoundData();
 
         line("Question: %s", $question);
 
