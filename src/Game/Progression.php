@@ -19,11 +19,11 @@ function start(): void
                 $len
             );
 
-            $key = array_rand($progression);
+            $hiddenMemberIndex = array_rand($progression);
 
-            $answer = $progression[$key];
+            $answer = $progression[$hiddenMemberIndex];
 
-            $progression[$key] = '..';
+            $progression[$hiddenMemberIndex] = '..';
 
             return [
                 implode(' ', $progression),
